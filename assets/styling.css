@@ -1,0 +1,148 @@
+@media screen and (max-width: 768px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html, body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom left, #14141f 50%, #4e155e);
+    color: #ffffff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  button, input[type="button"], input[type="submit"] {
+    background: linear-gradient(to right, #1e1e30, #3e155e);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  button:active {
+    transform: scale(0.97);
+    background: #3e155e;
+  }
+
+  img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  img:active, svg:active {
+    transform: scale(0.95);
+  }
+
+  select {
+    appearance: none;
+    background: #1e1e30;
+    color: #fff;
+    border: 2px solid #4e155e;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+
+  select:focus {
+    border-color: #3e155e;
+  }
+
+  option {
+    background: #14141f;
+    color: #fff;
+  }
+
+  a, button, input, select, img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #14141f 70%, #4e155e 30%);
+    z-index: -1;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #a07cdd;
+  }
+
+  input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4e155e;
+    background: #1e1e30;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  input:focus {
+    border-color: #3e155e;
+  }
+
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #1e1e30;
+    border-top: 2px solid #4e155e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  .navbar a:hover {
+    color: #a07cdd;
+  }
+}
