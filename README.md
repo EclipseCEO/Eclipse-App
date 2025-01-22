@@ -42,11 +42,14 @@ Please note that this is not a full-on Android app. It's a WebView APK of the we
 ### Subscriptions
 As the app is free and offers a lot of content, Users can purchase beneficial subscriptions. This will help with the development of the full stack app.  
 - **Basic**: £2 per month / £20 yearly (save £2)
-  Custom app icon, custom app themes, profile badge, 5% discount on all services.  
+  Custom app icon, custom app themes, profile badge, 5% discount on all services.
+  <br>
 - **Pro**: £6 per month / £70 yearly (save £2)
-  Everything in Basic, 10% discount on all services, private Telegram group access, free gift at the end of every month, access to GPT-40 AI model.  
+  Everything in Basic, 10% discount on all services, private Telegram group access, free gift at the end of every month, access to GPT-40 AI model.
+  <br>
 - **Elite**: £15 per month / £175 (£save £5)
-  Everything in Pro, 15% discount on all services, access to service bundles, 2 free gifts at the end of every month, 24/7 help & support, access to all AI models.  
+  Everything in Pro, 15% discount on all services, access to service bundles, 2 free gifts at the end of every month, 24/7 help & support, access to all AI models.
+  <br>
 - **Royalty**: £30 per month / £340 yearly (save £20)
   Everything in Elite, 20% discount on all services, access to hidden services,3 free gifts at the end of every month, access to Eclipse AI model.  
 
@@ -54,9 +57,11 @@ As the app is free and offers a lot of content, Users can purchase beneficial su
 
 ### FAQ
 Q: Why isn't Eclipse already a full stack app?
-A: Honestly, I just don't have the time to develop it yet. When I work on a project, I like to focus on only that for hours. <br>
+A: Honestly, I just don't have the time to develop it yet. When I work on a project, I like to focus on only that for hours.  
+<br>
 Q: Why do You host the websites on GitHub and not a dedicated domain?
-A: While having a custom domain would be good, GitHub has good attack prevention. Why waste money on security when I can get it for free? I guess I'm just cheap, lol. <br> 
+A: While having a custom domain would be good, GitHub has good attack prevention. Why waste money on security when I can get it for free? I guess I'm just cheap, lol.  
+<br>
 Q: Are there any other Developers or People working on this app?
 A: I'm a control freak, only I work on My projects. To prevent being betrayed or anything going wrong. If something does mess up, I'm the only one to blame.
 
