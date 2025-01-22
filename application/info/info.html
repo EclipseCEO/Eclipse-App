@@ -12,60 +12,302 @@
     <script src="https://eclipseceo.github.io/Eclipse-App/assets/scripting.js"></script>
     <link rel="manifest" href="https://eclipseceo.github.io/Eclipse-App/assets/manifest.json">
     <link rel="icon" href="https://eclipseceo.github.io/Eclipse-App/assets/branding/favicon.png">
-    <style>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            background: linear-gradient(to bottom left, #14141f 50%, #4e155e);
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom left, #14141f 50%, #4e155e);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
 
-        .rounded-body {
-            background-color: #141414;
-            color: #fff;
-            width: 50%;
-            max-width: 300px;
-            border-radius: 15px;
-            border: 1px solid #7f00ff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
 
-        .rounded-body img {
-            display: block;
-            margin: 0 auto 10px auto;
-            width: 38px;
-            height: 38px;
-        }
+  .navbar .icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 
-        .rounded-body h4 {
-            margin: 10px 0;
-        }
+  .navbar .icon img {
+    width: 100%;
+    height: auto;
+  }
 
-        @media (max-width: 768px) {
-            .rounded-body {
-                width: 90%;
-                padding: 15px;
-            }
-        }
-    </style>
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  .popup .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .popup .header .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .popup .header .close-icon img {
+    width: 14px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .popup .input-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #2b2b2b;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #ccc;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .popup .input-bar img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .popup .input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+    background: #1e1e1e;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .dropdown-menu .option {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .dropdown-menu .option img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .dropdown-menu .option:hover {
+    background: #333;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 767px) {
+    .navbar .icon {
+      width: 30px;
+      height: 30px;
+      margin: 0 6px;
+    }
+
+    .popup {
+      width: 85%;
+      max-width: 350px;
+      padding: 15px;
+    }
+
+    .popup .header .title {
+      font-size: 16px;
+    }
+
+    .popup .input-bar {
+      padding: 8px 12px;
+    }
+
+    .popup .input-bar img {
+      width: 18px;
+      margin-right: 8px;
+    }
+
+    .popup .input-bar input {
+      font-size: 14px;
+    }
+
+    .dropdown-menu {
+      width: 160px;
+      bottom: 70px;
+    }
+
+    .dropdown-menu .option {
+      padding: 8px 12px;
+    }
+
+    .dropdown-menu .option img {
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .popup {
+      width: 80%;
+      max-width: 320px;
+      padding: 12px;
+    }
+
+    .navbar .icon {
+      width: 28px;
+      height: 28px;
+      margin: 0 5px;
+    }
+
+    .popup .header .title {
+      font-size: 14px;
+    }
+
+    .popup .input-bar {
+      padding: 6px 10px;
+    }
+
+    .popup .input-bar img {
+      width: 16px;
+      margin-right: 6px;
+    }
+
+    .popup .input-bar input {
+      font-size: 12px;
+    }
+
+    .dropdown-menu {
+      width: 140px;
+      bottom: 60px;
+    }
+
+    .dropdown-menu .option {
+      padding: 6px 10px;
+    }
+
+    .dropdown-menu .option img {
+      width: 16px;
+    }
+  }
+</style>
+
 </head>
 <body>
-    <div class="rounded-body">
-        <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/incomplete.png" alt="Incomplete">
-        <br>
-        <h4>Incomplete</h4>
-        <p>Please come back soon!</p>
-    </div>
-    <script>
 
-        console.log("Page loaded successfully!");
-    </script>
+  <div class="navbar">
+    <div class="icon" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/home/home.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/home.png" alt="Home">
+    </div>
+    <div class="icon" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/explore/explore.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/explore.png" alt="Explore">
+    </div>
+    <div class="icon" onclick="openPopup();">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/search.png" alt="Search">
+    </div>
+    <div class="icon" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/settings/settings.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/settings.png" alt="Settings">
+    </div>
+    <div class="icon" onclick="toggleDropdown();">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/menu.png" alt="Menu">
+    </div>
+  </div>
+
+  <div class="popup" id="popup">
+
+    <div class="header">
+      <span class="title">Search</span>
+      <span class="close-icon" onclick="closePopup();">
+        <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/close.png" alt="Close" />
+      </span>
+    </div>
+
+    <div class="input-bar">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/search.png" alt="Input Icon">
+      <input type="text" placeholder="Search...">
+    </div>
+  </div>
+
+  <div class="dropdown-menu" id="dropdownMenu">
+    <div class="option" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/account/account.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/account.png" alt="Account"> Account
+    </div>
+    <div class="option" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/services/services.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/services.png" alt="Services"> Services
+    </div>
+    <div class="option" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/projects/projects.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/projects.png" alt="Projects"> Projects
+    </div>
+    <div class="option" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/ai/ai.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/ai.png" alt="AI"> AI
+    </div>
+    <div class="option" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/movies/movies.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/movies.png" alt="Movies"> Movies
+    </div>
+    <div class="option" onclick="window.location.href='https://eclipseceo.github.io/Eclipse-App/application/info/info.html';">
+      <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/info.png" alt="Info"> Info
+    </div>
+  </div>
+
+  <script>
+    function openPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdownMenu');
+      if (dropdown.style.display === 'flex') {
+        dropdown.style.display = 'none';
+      } else {
+        dropdown.style.display = 'flex';
+      }
+    }
+  </script>
 </body>
 </html>

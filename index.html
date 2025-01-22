@@ -12,60 +12,54 @@
     <script src="https://eclipseceo.github.io/Eclipse-App/assets/scripting.js"></script>
     <link rel="manifest" href="https://eclipseceo.github.io/Eclipse-App/assets/manifest.json">
     <link rel="icon" href="https://eclipseceo.github.io/Eclipse-App/assets/branding/favicon.png">
-    <style>
+  <style>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            background: linear-gradient(to bottom left, #14141f 50%, #4e155e);
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #141414;
+      overflow: hidden;
+    }
 
-        .rounded-body {
-            background-color: #141414;
-            color: #fff;
-            width: 50%;
-            max-width: 300px;
-            border-radius: 15px;
-            border: 1px solid #7f00ff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
+    .preloader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-        .rounded-body img {
-            display: block;
-            margin: 0 auto 10px auto;
-            width: 38px;
-            height: 38px;
-        }
+    .preloader img {
+      width: 80px;
+      height: auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
 
-        .rounded-body h4 {
-            margin: 10px 0;
-        }
-
-        @media (max-width: 768px) {
-            .rounded-body {
-                width: 90%;
-                padding: 15px;
-            }
-        }
-    </style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="rounded-body">
-        <img src="https://eclipseceo.github.io/Eclipse-App/assets/icons/incomplete.png" alt="Incomplete">
-        <br>
-        <h4>Incomplete</h4>
-        <p>Please come back soon!</p>
-    </div>
-    <script>
+  <div class="preloader">
 
-        console.log("Page loaded successfully!");
-    </script>
+    <img src="https://eclipseceo.github.io/Eclipse-App/assets/branding/splash.png" alt="Loading Image">
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://eclipseceo.github.io/Eclipse-App/application/home/home.html";
+    }, 3000);
+  </script>
+    
 </body>
 </html>
