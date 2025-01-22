@@ -1,0 +1,28 @@
+{
+  "name": "Eclipse",
+  "short_name": "EclipseApp",
+  "start_url": "https://eclipsedevelopments.org",
+  "description": "My app for Android. It's a WebView website that's hosted on GitHub.",
+  "keywords": ["App, Application, Android, WebView, Site, Website, Hot, Hosting, Hosted, Git, GitHub, Data, AI, Services, Projects, Modern, Clean"],
+  "author": "EclipseCEO",
+  "organization": "GitHub",
+  "icons": [
+    {
+      "src": "https://eclipseceo.github.io/Eclipse-App/assets/branding/favicon.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1e1e1e", 
+  "background_color": "#141414",
+  "display": "standalone",
+  "scope": "/",
+  "lang": "en",
+  "css": [
+    "https://eclipseceo.github.io/Eclipse-App/assets/styling.css"
+  ],
+  "js": [
+    "https://eclipseceo.github.io/Eclipse-App/assets/scripting.js"
+  ],
+  "manifest": "https://eclipseceo.github.io/Eclipse-App/assets/manifest.json"
+}
