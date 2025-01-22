@@ -14,43 +14,43 @@ Please note that this is not a full-on Android app. It's a WebView APK of the we
 
 ### App Contents
 - **Home**  
-  A preview or shortcuts to parts of the whole app.
+  `A preview or shortcuts to parts of the whole app.`
   <br>
 - **Info**  
-  Some useful information about the app, terms of service and legality.
+  `Some useful information about the app, terms of service and legality.`
   <br>
 - **Account**  
-  Where Users can manage Their account and subscriptions.
+  `Where Users can manage Their account and subscriptions.`
   <br>
 - **AI**  
-  An interactive AI ChatBot that supports multiple models.
+  `An interactive AI ChatBot that supports multiple models.`
   <br>
 - **Projects**  
-  A dedicated section of all My public projects.
+  `A dedicated section of all My public projects.`
   <br>
 - **Services**  
-  A list of all My services.
+  `A list of all My services.`
   <br>
 - **Movies**  
-  A section where movies can be watched and downloaded for free.
+  `A section where movies can be watched and downloaded for free.`
   <br>
 - **Settings**  
-  This section allows the User to customise and configure the app to Their liking.
+  `This section allows the User to customise and configure the app to Their liking.`
 
 <br>  
 
 ### Subscriptions
 As the app is free and offers a lot of content, Users can purchase beneficial subscriptions. This will help with the development of the full stack app.  
-- **Basic**: £2 per month / £20 yearly (save £2)  
+- **Basic**: `£2 per month` / `£20 yearly (save £2)`  
   Custom app icon, custom app themes, profile badge, 5% discount on all services.
   <br>
-- **Pro**: £6 per month / £70 yearly (save £2)  
+- **Pro**: `£6 per month` / `£70 yearly (save £2)`  
   Everything in Basic, 10% discount on all services, private Telegram group access, free gift at the end of every month, access to GPT-40 AI model.
   <br>
-- **Elite**: £15 per month / £175 (save £5)  
+- **Elite**: `£15 per month` / `£175 (save £5)`  
   Everything in Pro, 15% discount on all services, access to service bundles, 2 free gifts at the end of every month, 24/7 help & support, access to all AI models.
   <br>
-- **Royalty**: £30 per month / £340 yearly (save £20)  
+- **Royalty**: `£30 per month` / `£340 yearly (save £20)`  
   Everything in Elite, 20% discount on all services, access to hidden services,3 free gifts at the end of every month, access to Eclipse AI model.  
 
 <br>  
