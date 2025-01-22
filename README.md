@@ -13,21 +13,21 @@ Please note that this is not a full-on Android app. It's a WebView APK of the we
 <br>  
 
 ### App Contents
-- Home
+- Home  
   A preview or shortcuts to parts of the whole app. <br>
 - Info
   Some useful information about the app, terms of service and legality. <br>
-- Account
+- Account  
   Where Users can manage Their account and subscriptions. <br>
-- AI
+- AI  
   An interactive AI ChatBot that supports multiple models. <br>
-- Projects
+- Projects  
   A dedicated section of all My public projects. <br>
-- Services
+- Services  
   A list of all My services. <br>
-- Movies
+- Movies  
   A section where movies can be watched and downloaded for free. <br>
-- Settings
+- Settings  
   This section allows the User to customise and configure the app to Their liking.
 
 <br>  
