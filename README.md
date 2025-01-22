@@ -16,7 +16,7 @@ Please note that this is not a full-on Android app. It's a WebView APK of the we
 - Home  
   A preview or shortcuts to parts of the whole app.
   <br>
-- Info
+- Info  
   Some useful information about the app, terms of service and legality.
   <br>
 - Account  
