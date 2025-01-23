@@ -1,7 +1,5 @@
-<center>
 ![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Feclipseceo%2FEclipse-App&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=Visitors&edge_flat=false)
 ![Downloads](https://img.shields.io/github/downloads/eclipseceo/Eclipse-App/total?style=for-the-badge)
-</center>
 
 ### About
 The Eclipse app doesn't have a specific genre or aim. The plan is to pack as much into it as possible, so that there's a bit of everything.
