@@ -1,0 +1,27 @@
+APP INTEGRATIONS
+ - Device Specifications
+ - Internet Speed Test
+ - Media Player
+ - Social Media Content Downloader
+ - Tor Browsing
+ - Media Editor (Image, Video, Audio & Document)
+
+SERVICES
+ - Development
+  Custom Website
+  Custom Android App (WebView)
+  Custom Audio Track / Remix
+  Any Android App Modified
+  Custom PS3/PS4 Homebrew
+  Custom Malware
+ - Investigation
+  Full Private Investigation (On A Target / Person Of Interest)
+ - Social Media Marketing
+  All Major Social Media Platforms
+
+PROJECTS
+ - Eclipse App
+ - SnapEnhancer
+ - Eclipse Patcher
+ - Eclipse Stresser
+ - Eclipse ToolKit
