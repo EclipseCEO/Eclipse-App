@@ -1,7 +1,7 @@
 ### About
 The Eclipse app doesn't have a specific genre or aim. The plan is to pack as much into it as possible, so that there's a bit of everything.
 
-<br>  
+---
 
 ### Download
 Please note that this is not a full-on Android app. It's a WebView APK of the website hosted in this repo. This is to keep it lightweight and resource optimised.  
@@ -11,7 +11,7 @@ Please note that this is not a full-on Android app. It's a WebView APK of the we
 [MediaFire](https://google.com/404)  
 [Mega](https://google.com/404)  
 
-<br>  
+---
 
 ### App Contents
 - **Home**  
@@ -38,7 +38,7 @@ Please note that this is not a full-on Android app. It's a WebView APK of the we
 - **Settings**  
   `This section allows the User to customise and configure the app to Their liking.`
 
-<br>  
+---
 
 ### Subscriptions
 As the app is free and offers a lot of content, Users can purchase beneficial subscriptions. This will help with the development of the full stack app.  
@@ -54,7 +54,7 @@ As the app is free and offers a lot of content, Users can purchase beneficial su
 - **Royalty**: `£30 per month` / `£340 yearly (save £20)`  
   Everything in Elite, 20% discount on all services, access to hidden services,3 free gifts at the end of every month, access to Eclipse AI model.  
 
-<br>  
+---
 
 ### FAQ
 Q: Why isn't Eclipse already a full stack app?  
@@ -66,7 +66,7 @@ A: While having a custom domain would be good, GitHub has good attack prevention
 Q: Are there any other Developers or People working on this app?  
 A: I'm a control freak, only I work on My projects. To prevent being betrayed or anything going wrong. If something does mess up, I'm the only one to blame.  
 
-<br>  
+---
 
 ### Contact
 If You'd like to get in contact, You can do so via social media or email and SMS:  
