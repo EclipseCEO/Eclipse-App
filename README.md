@@ -57,14 +57,14 @@ As the app is free and offers a lot of content, Users can purchase beneficial su
 ---
 
 ### FAQ
-Q: Why isn't Eclipse already a full stack app?  
-A: Honestly, I just don't have the time to develop it yet. When I work on a project, I like to focus on only that for hours.  
+> Q: Why isn't Eclipse already a full stack app?  
+> A: Honestly, I just don't have the time to develop it yet. When I work on a project, I like to focus on only that for hours.  
 <br>  
-Q: Why do You host the websites on GitHub and not a dedicated domain?  
-A: While having a custom domain would be good, GitHub has good attack prevention. Why waste money on security when I can get it for free? I guess I'm just cheap, lol.  
+> Q: Why do You host the websites on GitHub and not a dedicated domain?  
+> A: While having a custom domain would be good, GitHub has good attack prevention. Why waste money on security when I can get it for free? I guess I'm just cheap, lol.  
 <br>  
-Q: Are there any other Developers or People working on this app?  
-A: I'm a control freak, only I work on My projects. To prevent being betrayed or anything going wrong. If something does mess up, I'm the only one to blame.  
+> Q: Are there any other Developers or People working on this app?  
+> A: I'm a control freak, only I work on My projects. To prevent being betrayed or anything going wrong. If something does mess up, I'm the only one to blame.  
 
 ---
 
