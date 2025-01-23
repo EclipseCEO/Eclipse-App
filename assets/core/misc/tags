@@ -1,0 +1,32 @@
+<! Eclipse Tags V1.0.0 >
+
+ // <! Eclipse Advertising V1.0.0 >        // Used to show adverts within the application.
+ // <! Eclipse Analytics V1.1.0 >          // Used to collected analytical data from Users.
+ // <! Eclipse Assets V1.1.0 >             // Used to configure what external assets can be used within the application.
+ // <! Eclipse Libraries V1.0.0 >          // A list of custom libraries that the application depends on.
+ // <! Eclipse Properties V1.1.0 >         // A configuration of the application and how it functions.
+ // <! Eclipse Tags V1.0.0 >               // A custom tag that contains instructions on which file does what.
+
+  Class.Tag();
+   ID "Advertising"
+    Loader&Function[FromExternalURL = https://404%5A6GB2.projects-codex/users/Eclipse-Dev/projects/Eclipse-App/Core/Advertising]
+
+  Class.Tag();
+   ID "Analytics"
+    Loader&Function[FromExternalURL = https://404%5A6GB2.projects-codex/users/Eclipse-Dev/projects/Eclipse-App/Core/Analytics]
+
+  Class.Tag();
+   ID "Assets"
+    Loader&Function[FromExternalURL = https://404%5A6GB2.projects-codex/users/Eclipse-Dev/projects/Eclipse-App/Core/Assets]
+
+  Class.Tag();
+   ID "Libraries"
+    Loader&Function[FromExternalURL = https://404%5A6GB2.projects-codex/users/Eclipse-Dev/projects/Eclipse-App/Core/Libraries]
+
+  Class.Tag();
+   ID "Properties"
+    Loader&Function[FromExternalURL = https://404%5A6GB2.projects-codex/users/Eclipse-Dev/projects/Eclipse-App/Core/Properties]
+
+  Class.Tag();
+   ID "Tags"
+    Loader&Function[FromExternalURL = https://404%5A6GB2.projects-codex/users/Eclipse-Dev/projects/Eclipse-App/Core/Tags]
