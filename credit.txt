@@ -1,0 +1,20 @@
+Trae IDE                      // Claude Sonnet 3.5 AI used to help develop future back-end implementations.
+Brackets Editor               // Used to develop most of the web pages.
+Phoenix Code                  // Used to develop future TailWind CSS implementations.
+
+Google Images                 // Used for the FavIcon and WebView APK logo.
+FontSpace                     // Used to create the WebView APK splash text.
+Icons8                        // Used for all of the icons included in the source.
+Polish Editor Pro             // Used to edit some of the images included in the source.
+CapCut                        // Used to create some of the future image and video animations.
+Adobe After Effects           // Used to create some of the future icon animations.
+GitHub                        // Used to host the source files via GitHub pages.
+NotePad                       // Used to create quick notes.
+NotePad++                     // Used to create notes.
+GoDaddy                       // Used to buy the upcoming domain which will host the source files.
+Android Studio                // Used to start development on the full-on Android app.
+Visual Studio Code            // Used to start development on the full-on Android app.
+Niotron                       // Used to compile the source files into a WebView APK.
+
+EclipseCEO                    // Developer and Author of the project.
+Tamara                        // Provided background and icon colour ideas as well as some useful insight.
