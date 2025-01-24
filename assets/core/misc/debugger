@@ -1,3 +1,146 @@
- {
-  "No data!"
- }
+<#debugger.html>
+    
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        #console {
+            height: 70%;
+            overflow-y: auto;
+            background: #000000;
+            padding: 10px;
+            border-bottom: 2px solid #444;
+        }
+        #console pre {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: monospace;
+        }
+        #inputBar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #2b2b2b;
+        }
+        #inputBar input {
+            flex: 1;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 1px solid #444;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        #inputBar button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #444;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #inputBar button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="console"></div>
+    <div id="inputBar">
+        <input id="jsInput" type="text" placeholder="%Text?=True">
+        <button onclick="executeCode()">Run</button>
+    </div>
+
+    <script>
+        const consoleElement = document.getElementById('console');
+        const inputElement = document.getElementById('jsInput');
+
+        function logMessage(message) {
+            const pre = document.createElement('pre');
+            pre.textContent = message;
+            consoleElement.appendChild(pre);
+            consoleElement.scrollTop = consoleElement.scrollHeight;
+        }
+
+        function executeCode() {
+            const code = inputElement.value.trim();
+            if (!code) return;
+
+            try {
+                const result = eval(code);
+                logMessage(`> ${code}`);
+                logMessage(`Result: ${result}`);
+            } catch (error) {
+                logMessage(`> ${code}`);
+                logMessage(`Error: ${error.message}`);
+            }
+
+            inputElement.value = '';
+        }
+
+        window.logFromNative = logMessage;
+    </script>
+</body>
+</html>
+
+<#MainActivity.java>
+ package com.example.jsdebugger;
+
+import android.os.Bundle;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.webkit.JavascriptInterface;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+    private WebView webView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        webView = findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebChromeClient(new WebChromeClient());
+        webView.setWebViewClient(new WebViewClient());
+        webView.addJavascriptInterface(new JSInterface(), "AndroidInterface");
+
+        webView.loadUrl("");
+    }
+
+    public class JSInterface {
+        @JavascriptInterface
+        public void logMessage(String message) {
+            Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+        }
+    }
+}
+
+<#activity_main.xml>
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android=""
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,3 +1,38 @@
- {
-  "No data!"
- }
+const eclipseAppProperties = {
+    Packaged: true,
+    Signed: true,
+    Obfuscated: false,
+    "Project-Name": "Eclipse App",
+    "Project-Version": "1.0.0 (Universal)",
+    "Project-Release": "Stable",
+    "Project-Author": "EclipseCEO",
+    "Project-Organisation": "Eclipse Developments Organisation",
+    "Intended-Platform": "Android",
+    "Minimum-Version": "Android 5.0 Lollipop",
+    "Maximum-Version": "Android 16 Developer Preview 2",
+    "File-Extension": "APK",
+    Architectures: ["Universal", "ARM7", "ARM8"],
+    "Application-Name": "Eclipse App",
+    "File-Name": "EclipseApp_1.0.0_Universal.apk",
+    "Package-Name": "com.eclipse.app",
+    "Visible-Version": "1.0.0 (Universal WebView)",
+    "Full-Version": "1.0.0-U-WV_S100UWV",
+    "App-Icon": true,
+    Permissions: "All_Permissions",
+    Updatable: true,
+    Modifiable: "True (Limited)",
+    "Splash-Screen": true,
+    "Theme-Support": {
+        Light: "#ffffff",
+        Dark: "#1e1e1e",
+        MidNight: "#141414",
+        Amoled: "#000000",
+        Custom: "%"
+    },
+    Analytics: true,
+    Debugging: true
+};
+
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = eclipseAppProperties;
+}

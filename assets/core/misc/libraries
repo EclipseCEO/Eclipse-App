@@ -1,3 +1,42 @@
- {
-  "No data!"
- }
+const androidLibraries = {
+    Networking: [
+        "Retrofit",
+        "OkHttp",
+        "Volley",
+        "FastAndroidNetworking",
+        "Fuel",
+        "Apollo GraphQL",
+        "Ktor",
+    ],
+    Debugging: [
+        "Stetho",
+        "LeakCanary",
+        "Timber",
+        "Hyperion",
+        "Flipper",
+        "Chucker",
+        "DebugDrawer",
+    ],
+    Data: [
+        "Room",
+        "Realm",
+        "ObjectBox",
+        "Firebase Realtime Database",
+        "SQLite Asset Helper",
+        "Exposed",
+        "SQLDelight",
+    ],
+    Analytics: [
+        "Firebase Analytics",
+        "Amplitude",
+        "Mixpanel",
+        "Appsflyer",
+        "Heap",
+        "Adjust",
+        "Google Analytics for Firebase",
+    ]
+};
+
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = androidLibraries;
+}
